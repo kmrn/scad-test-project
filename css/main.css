@@ -1,0 +1,262 @@
+html, body {
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #22a119;
+}
+
+a:hover {
+    color: #176e11;
+}
+
+a:active {
+    color: #11520d;
+}
+
+h1, h2, h3 {
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, button {
+    text-transform: uppercase;
+}
+
+.bg-dark-gray {
+    background-color: #333;
+}
+
+.bg-light-gray {
+    background-color: #eee;
+}
+
+.bg-dark-gray p {
+    color: #aaa;
+}
+
+.text-medium-gray {
+    color: #555;
+}
+
+.nav-link, .uppercase {
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 1180px;
+}
+
+.logo-text {
+    font-weight: 400;
+    font-size: 1rem;
+    padding-top: 18px;
+    float: left;
+    margin-bottom: 0;
+}
+
+.navbar {
+    padding: 0;
+    padding-top: 10px;
+
+}
+
+.nav-link {
+    color: #111 !important;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.navbar-toggler {
+    margin: 10px;
+}
+
+.scad-logo {
+    height: 40px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+        padding-top: 30px;
+    }
+
+    .scad-logo {
+        height: 60px;
+    }
+}
+
+/* Hero Section */
+
+.hero-section {
+    background-image: url("../assets/hero.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-text-container {
+    margin-top: 20vh;
+}
+
+.hero-sub-text {
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 2rem;
+    padding: 5px 30px;
+    font-weight: 200;
+}
+
+.hero-main-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px #111;
+    font-size: 6rem;
+}
+
+/* @media (min-width: 768px) {
+    .hero-main-text {
+        font-size: 4rem;
+    }
+} */
+
+.hero-button {
+    margin: 10px;
+    background-color: #22a119;
+    font-weight: 800;
+    font-size: 1.4rem;
+    padding: 20px 60px;
+    border-radius: 0;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+/* PERSPICIATIS ICONS SECTION */
+
+.icons-section {
+    text-align: center;
+}
+
+.title-separator {
+    border: 1px solid #22a119;
+    width: 40px;
+}
+
+.icon-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: #22a119;
+    margin: 30px auto;
+}
+
+.icon-circle i {
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.icon-title {
+    margin: 20px;
+}
+
+
+/** UNDE CAROUSEL SECTION **/
+
+.unde-title, .unde-body {
+    color: #555;
+}
+
+.unde-body {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.unde-list {
+    list-style: none;
+    margin-left: 16px !important;
+}
+
+.unde-list li {
+    line-height: 40px;
+}
+
+.unde-list li .fa-li {
+    font-size: 10px;
+    color: #22a119;
+}
+
+/* .unde-carousel {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    max-height: 369px;
+} */
+
+.unde-carousel {
+    /* height: 400px; */
+}
+
+.carousel-inner {
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.carousel-item {
+    height: 400px;
+}
+
+.carousel-item>img {
+    height: auto;
+    width: auto;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 60px;
+    margin-top: 170px;
+}
+
+
+/** OMNIS SECTION **/
+
+.omnis-section {
+}
+
+/** STATS SECTION **/
+
+.stats-container {
+    color: #fff;
+}
+
+.stat-block h1 {
+    font-size: 5rem;
+}
+
+.stat-block h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/** CONTACT US SECTION **/
+
+footer {
+    padding: 30px;
+    background: #111;
+    text-align: center;
+}
