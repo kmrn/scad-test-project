@@ -167,6 +167,44 @@
           <h2>Natus</h2>
           <hr class="title-separator" />
           <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequator? Quis autem vel eum iure reprehenderit qui in ea voluptate.</p>
+          <div class="row">
+            <div class="col-md">
+              <div class="natus-card bg-white">
+                <div class="natus-card-image-container">
+                  <img class="d-block w-100" src="assets/team-1.jpg" alt="Team 1">
+                </div>
+                <div class="natus-card-text-container">
+                  <h5 class="natus-card-title uppercase">Holum Readus</h5>
+                  <h6 class="natus-card-subtitle uppercase">Malecafis & Inundum</h6>
+                  <p class="natus-card-body">Mida sit una namet, cons uectetur adipiscing adon elit. Aliquam vitae barasa droma.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="natus-card bg-white">
+                <div class="natus-card-image-container">
+                  <img class="d-block w-100" src="assets/team-2.jpg" alt="Team 2">
+                </div>
+                <div class="natus-card-text-container">
+                  <h5 class="natus-card-title uppercase">Balis Mocani</h5>
+                  <h6 class="natus-card-subtitle uppercase">Calabanatis</h6>
+                  <p class="natus-card-body">Worsa dona namet, cons uectetur dipiscing adon elit. Aliquam vitae fringilla unda mir.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="natus-card bg-white">
+                <div class="natus-card-image-container">
+                  <img class="d-block w-100" src="assets/team-3.jpg" alt="Team 3">
+                </div>
+                <div class="natus-card-text-container">
+                  <h5 class="natus-card-title uppercase">Mathis Ligundum</h5>
+                  <h6 class="natus-card-subtitle uppercase">Triumfantis</h6>
+                  <p class="natus-card-body">Dolor sit don namet, cons uectetur beriscing adon elit. Aliquam vitae fringilla unda.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="contactUs" class="text-center text-white bg-dark-gray">

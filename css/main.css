@@ -253,6 +253,39 @@ section {
     text-transform: uppercase;
 }
 
+/** LOGOS SECTION ***/
+
+
+
+/*** NATUS/TEAM SECTION ***/
+
+.natus-card {
+    margin-top: 40px;
+}
+
+.natus-card-image-container {
+    margin-bottom: 10px; 
+}
+
+.natus-card-text-container {
+    padding: 10px;
+}
+
+.natus-card-title {
+    color: #111;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.natus-card-subtitle {
+    padding: 10px;
+}
+
+.natus-card-body {
+    padding: 10px;
+    color: #111;
+}
+
 /** CONTACT US SECTION **/
 
 footer {
