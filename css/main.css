@@ -24,7 +24,7 @@ h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, button {
+h1, h2 {
     text-transform: uppercase;
 }
 
@@ -42,6 +42,14 @@ h1, h2, button {
 
 .text-medium-gray {
     color: #555;
+}
+
+.text-light-gray {
+    color: #aaa;
+}
+
+.text-700-bold {
+    font-weight: 700; 
 }
 
 .nav-link, .uppercase {
@@ -235,7 +243,12 @@ section {
 
 /** OMNIS SECTION **/
 
-.omnis-section {
+.portfolios {
+    margin-top: 60px;
+}
+
+.portfolio-block {
+    padding: 1px;
 }
 
 /** STATS SECTION **/
@@ -287,6 +300,32 @@ section {
 }
 
 /** CONTACT US SECTION **/
+
+.form-control {
+    border-radius: 0;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-col {
+    margin-top: 40px;
+}
+
+.office-address {
+
+}
+
+.business-hours-list {
+    margin-left: 25px !important;
+}
+
+.contact-submit-button {
+    background-color: #22a119;
+    border-radius: 0;
+    padding: 10px 20px;
+}
 
 footer {
     padding: 30px;
