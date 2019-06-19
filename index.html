@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -47,7 +46,7 @@
         <div class="hero-text-container container">
           <span class="hero-sub-text text-dark">Eu fugiat nulla pariatur</span>
           <h1 class="hero-main-text text-white">Excepteur sint occae cupidata non proide</h1>
-          <button type="button" class="btn btn-success hero-button">Esse te cillum</button>
+          <button type="button" class="btn btn-success hero-button uppercase">Esse te cillum</button>
         </div>
       </section>
       <section id="perspiciatis" class="icons-section bg-dark-gray text-white">
@@ -125,14 +124,28 @@
           <h2>OMNIS</h2>
           <hr class="title-separator" />
           <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem qperiam.
-          <div class="row">
-            <div class="col-md"><img class="d-block w-100" src="assets/portfolio-1.jpg" alt="Portfolio 1"></div>
-            <div class="col-md"><img class="d-block w-100" src="assets/portfolio-2.jpg" alt="Portfolio 2"></div>
-            <div class="col-md"><img class="d-block w-100" src="assets/portfolio-3.jpg" alt="Portfolio 3"></div>
+          <div class="row portfolios">
+            <div class="col-md portfolio-block">
+              <div class="portfolio-link-container">
+                <img class="d-block w-100" src="assets/portfolio-1.jpg" alt="Portfolio 1">
+              </div>
+            </div>
+            <div class="col-md portfolio-block">
+              <img class="d-block w-100" src="assets/portfolio-2.jpg" alt="Portfolio 2">
+            </div>
+            <div class="col-md portfolio-block">
+              <img class="d-block w-100" src="assets/portfolio-3.jpg" alt="Portfolio 3">
+            </div>
             <div class="w-100"></div>
-            <div class="col-md"><img class="d-block w-100" src="assets/portfolio-4.jpg" alt="Portfolio 4"></div>
-            <div class="col-md"><img class="d-block w-100" src="assets/portfolio-5.jpg" alt="Portfolio 5"></div>
-            <div class="col-md"><img class="d-block w-100" src="assets/portfolio-6.jpg" alt="Portfolio 6"></div>
+            <div class="col-md portfolio-block">
+              <img class="d-block w-100" src="assets/portfolio-4.jpg" alt="Portfolio 4">
+            </div>
+            <div class="col-md portfolio-block">
+              <img class="d-block w-100" src="assets/portfolio-5.jpg" alt="Portfolio 5">
+            </div>
+            <div class="col-md portfolio-block">
+              <img class="d-block w-100" src="assets/portfolio-6.jpg" alt="Portfolio 6">
+            </div>
           </div>
         </div>
       </section>
@@ -207,21 +220,45 @@
           </div>
         </div>
       </section>
-      <section id="contactUs" class="text-center text-white bg-dark-gray">
+      <section id="contactUs" class="text-white bg-dark-gray">
         <div class="container">
-          <h2>Contact Us</h2>
+          <h2 class="text-center">Contact Us</h2>
           <hr class="title-separator" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tmepor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <div class="row">
-            <div class="col-md-3">
-              <h5>Our Office</h5>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tmepor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="row contact-info text-light-gray">
+            <div class="col-md-3 contact-col">
+              <address class="office-address">
+                <h5 class="text-700-bold text-white">Our Office</h5>
+                12345 Main Street<br/>
+                Savannah, Ga., 31401<br/>
+                <i class="fas fa-phone-alt"></i> 912.555.1212<br/>
+                <i class="fas fa-envelope"></i> web@scad.edu<br/>
+              </address>
             </div>
-            <div class="col-md-3">
-              <h5>Business Hours</h5>
+            <div class="col-md-3 contact-col">
+              <h5 class="text-700-bold text-white">Business Hours</h5>
+              <ul class="fa-ul business-hours-list">
+                <li><span class="fa-li"><i class="far fa-clock"></i></span>Weekdays: 8:30 a.m. to 5:30 p.m.</li>
+                <li><span class="fa-li"><i class="far fa-clock"></i></span>Saturday: 9 a.m. to noon</li>
+                <li><span class="fa-li"><i class="far fa-clock"></i></span>Sunday: Closed</li>
+              </ul>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 contact-col">
               <form id="contactForm">
-                
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input type="name" name="Name" class="form-control" id="inputName" placeholder="Your Name *" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input type="email" name="Email" class="form-control" id="inputEmail" placeholder="Your Email *" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="Message" id="textareaMessage" rows="3" placeholder="Your Message *" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success contact-submit-button text-center">Send Message</button>
+                </div>
               </form>
             </div>
           </div>
@@ -237,5 +274,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5a5e01c027.js"></script>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
