@@ -29,8 +29,8 @@ if ($result->num_rows > 0)
 
         $signup = array(
             "SID" => $SID,
-            "name" => $name,
-            "email" => $email,
+            "name" => htmlspecialchars($name),
+            "email" => htmlspecialchars($email),
             "created" => $created
         );
 
