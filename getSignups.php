@@ -1,11 +1,11 @@
 <?php
 
 $config = include('config.php');
-$dbLink = new mysqli($config['dbUrl'], $config['dbUsername'], $config['dbPassword'], $config['database']);
+$mysqli = new mysqli($config['dbUrl'], $config['dbUsername'], $config['dbPassword'], $config['database']);
 
-if ($dbLink->connect_error)
+if ($mysqli->connect_error)
 {
-    die("Connection failed: " . $dbLink->connect_error);
+    die("Connection failed: " . $mysqli->connect_error);
 }
 
 $sql = "SELECT
@@ -15,7 +15,7 @@ $sql = "SELECT
             created
         FROM
             messages";
-$result = $dbLink->query($sql);
+$result = $mysqli->query($sql);
 
 if ($result->num_rows > 0)
 {

@@ -5,13 +5,13 @@ $config = include('config.php');
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
 
-$dbLink = mysqli_connect($config['dbUrl'], $config['dbUsername'], $config['dbPassword'], $config['database']);
+$mysqli = new mysqli($config['dbUrl'], $config['dbUsername'], $config['dbPassword'], $config['database']);
 
-$name = mysql_real_escape_string($_POST['name']);
-$email = mysql_real_escape_string($_POST['email']);
+$name = $mysqli->real_escape_string($_POST['name']);
+$email = $mysqli->real_escape_string($_POST['email']);
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
-$signUp = $dbLink->prepare("INSERT INTO messages (
+$signUp = $mysqli->prepare("INSERT INTO messages (
                                 name, 
                                 email, 
                                 created
