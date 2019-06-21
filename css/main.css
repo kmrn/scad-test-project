@@ -232,10 +232,6 @@ section {
     color: #22a119;
 }
 
-.unde-carousel {
-    /* height: 400px; */
-}
-
 .carousel-inner {
     overflow: hidden;
     max-height: 400px;
@@ -411,10 +407,6 @@ section {
 
 .contact-col {
     margin-top: 40px;
-}
-
-.office-address {
-
 }
 
 .business-hours-list {
