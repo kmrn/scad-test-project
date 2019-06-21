@@ -23,7 +23,7 @@ $createMessagesTable = "CREATE TABLE IF NOT EXISTS scad_test_db.messages (
                             SID INT AUTO_INCREMENT,
                             name VARCHAR(255) NOT NULL,
                             email VARCHAR(255) NOT NULL,
-                            created DATE,
+                            created DATETIME,
                             PRIMARY KEY (SID)
                         )";
 
