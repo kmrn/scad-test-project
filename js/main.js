@@ -7,6 +7,10 @@
             mainAudio: 'js/music/elevator.mp3',
             endAudio: 'js/music/ding.mp3'
         });
+
+        if ($(this).scrollTop() !== 0) {
+            $('.elevator').show();
+        }
     }
 
     $('#contactForm').submit(function (event) {
@@ -65,7 +69,7 @@
         }).modal();
     });
 
-    $('a[href*="#"]').click(function (event) {
+    $('a[href*="#"]').not('[href="#"]').click(function (event) {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
             && location.hostname === this.hostname) {
 
@@ -92,6 +96,17 @@
                     }
                 });
             }
+        }
+    });
+    
+    var $elevator = $('.elevator');
+    $(document).scroll(function () {
+        var scrollHeight = $(window).scrollTop();
+        if (scrollHeight === 0 && $elevator.is(":visible")) {
+            $elevator.fadeOut(400);
+        }
+        if (scrollHeight !== 0 && $elevator.is(':hidden')) {
+            $elevator.fadeIn(400);
         }
     });
 })();
