@@ -9,6 +9,8 @@ A fun extra I included was ElevatorJS instead of just having the "back to top" b
 
 I used Bootstrap 4 for the layout since I noticed a few bootstrap components in the mockup and figured that made the most sense (also because the spec sheet I was given mentions boostrap as an example). Because I used Bootstrap that means I also had to include jQuery. I was originally using the slim build of jquery (no ajax or animations) but ended up switching to the full version for the smooth scroll animations after I had already written all the requests without `$.ajax()`.
 
+I opted to use just regular CSS over a preprocessor language since I wasn't sure if it would be worth messing with. After completing the project I think I could've saved a little effort and made `main.css` look a lot nicer if I had just used SCSS or LESS.
+
 
 ## Back End
 
