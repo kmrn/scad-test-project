@@ -1,6 +1,6 @@
 # scad-test-project
 
-I worked on developing this single page site for about 3 or 4 days after work. It's based on a mockup I was given and I definitely got a little caught up in the details of trying to make an accurate recreation.
+I worked on this single page website in the 2 or 3 free nights I had this week. It's based on a mockup I was given and I definitely got a little caught up in the details of trying to make an accurate recreation.
 
 
 ## Front End
