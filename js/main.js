@@ -71,8 +71,10 @@
 
     $('#isteCarousel').slick({
         dots: true,
-        infinite: false,
-        speed: 500,
+        infinite: true,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 2500,
         prevArrow: '',
         nextArrow: '',
         customPaging: function(slider, i) {

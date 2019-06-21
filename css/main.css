@@ -20,8 +20,8 @@ a:active { color: #11520d; }
     border-color: #176e11; 
 }
 .btn-primary:active { 
-    background-color: #11520d;
-    border-color: #11520d;
+    background-color: #11520d !important;
+    border-color: #11520d !important;
 }
 .btn {
     border-radius: 0;
@@ -104,7 +104,7 @@ h1, h2, h3, h4, h5, h6, .btn {
     height: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 820px) {
     .navbar {
         padding: 20px;
     }
@@ -116,6 +116,26 @@ h1, h2, h3, h4, h5, h6, .btn {
 
     .scad-logo {
         height: 60px;
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    from {
+        transform: translate3d(0,40px,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        transform: translate3d(0,40px,0);
+    }
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
     }
 }
 
@@ -147,9 +167,13 @@ h1, h2, h3, h4, h5, h6, .btn {
     font-weight: 800;
     text-shadow: 1px 1px 2px #111;
     font-size: 3rem;
+    opacity: 0;
+
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 880px) {
     .hero-text-container {
         margin-top: 20vh;
     }
@@ -204,6 +228,44 @@ section {
 
 .icon-title {
     margin: 20px;
+}
+
+
+
+.icon-circle-container {
+    opacity: 0;
+
+    -webkit-animation-name: fadeUp;
+    animation-name: fadeUp;
+}
+
+.animated-2s {
+    -webkit-animation: fadeUp 2s ease-out forwards;
+	   -moz-animation: fadeUp 2s ease-out forwards;
+	    -ms-animation: fadeUp 2s ease-out forwards;
+	     -o-animation: fadeUp 2s ease-out forwards;
+	        animation: fadeUp 2s ease-out forwards;
+}
+.animated-3s {
+    -webkit-animation: fadeUp 3s ease-out forwards;
+	   -moz-animation: fadeUp 3s ease-out forwards;
+	    -ms-animation: fadeUp 3s ease-out forwards;
+	     -o-animation: fadeUp 3s ease-out forwards;
+	        animation: fadeUp 3s ease-out forwards;
+}
+.animated-4s {
+    -webkit-animation: fadeUp 4s ease-out forwards;
+	   -moz-animation: fadeUp 4s ease-out forwards;
+	    -ms-animation: fadeUp 4s ease-out forwards;
+	     -o-animation: fadeUp 4s ease-out forwards;
+	        animation: fadeUp 4s ease-out forwards;
+}
+.animated-5s {
+    -webkit-animation: fadeUp 5s ease-out forwards;
+	   -moz-animation: fadeUp 5s ease-out forwards;
+	    -ms-animation: fadeUp 5s ease-out forwards;
+	     -o-animation: fadeUp 5s ease-out forwards;
+	        animation: fadeUp 5s ease-out forwards;
 }
 
 
