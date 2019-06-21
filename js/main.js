@@ -57,5 +57,12 @@
         }).modal();
     });
 
-    
+    window.onload = function() {
+        var elevator = new Elevator({
+            element: document.querySelector('.elevator'),
+            mainAudio: 'js/music/elevator.mp3',
+            endAudio: 'js/music/ding.mp3'
+        });
+    }
+
 })();
