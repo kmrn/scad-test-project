@@ -15,3 +15,6 @@ I used Bootstrap 4 for the layout since I noticed a few bootstrap components in 
 The database creation script connects to the MySQL server specified in `config.php` and creates a messages table if it doesn't already exist. So the process for starting it is supposed to just be to run `createDatabase.php` and then start the built in php server from the root of the directory.
 
 `contactForm.php` sanitizes all user input before inserting it into the messages table and then `getSignups.php` sanitizes before putting it into an html table that can be viewed at `/signups`. 
+
+
+The total size for the project with all assets comes out to about 4.4 MB.
