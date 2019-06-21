@@ -82,7 +82,9 @@
                 event.preventDefault();
 
                 $('html, body').animate({
-                    scrollTop: target.offset().top - 60
+                    scrollTop: (window.matchMedia('(min-width: 768px)').matches)
+                                ? target.offset().top - 60
+                                : target.offset().top
                 }, 1000, function() {
                     var $target = $(target);
                     $target.focus();
@@ -97,6 +99,10 @@
                 });
             }
         }
+    });
+
+    $('.nav-link').click(function (event) {
+        $('.navbar-collapse').collapse('hide');
     });
     
     var $elevator = $('.elevator');
