@@ -1,6 +1,14 @@
 (function () {
     'use strict';
 
+    window.onload = function() {
+        var elevator = new Elevator({
+            element: document.querySelector('.elevator'),
+            mainAudio: 'js/music/elevator.mp3',
+            endAudio: 'js/music/ding.mp3'
+        });
+    }
+
     $('#contactForm').submit(function (event) {
         var self = this; 
         event.preventDefault();
@@ -49,20 +57,41 @@
         event.preventDefault();
 
         $('#portfolioModal').on('show.bs.modal', function (showModalEvent) {
-            var button = $(event.currentTarget);
-            var imageLink = button.find('.portfolio-image').attr('src');
-            var portfolioImage = $(showModalEvent.currentTarget).find('.portfolio-modal-image');
+            var $button = $(event.currentTarget);
+            var imageLink = $button.find('.portfolio-image').attr('src');
+            var $portfolioImage = $(showModalEvent.currentTarget).find('.portfolio-modal-image');
 
-            portfolioImage.attr('src', imageLink);
+            $portfolioImage.attr('src', imageLink);
         }).modal();
     });
 
-    window.onload = function() {
-        var elevator = new Elevator({
-            element: document.querySelector('.elevator'),
-            mainAudio: 'js/music/elevator.mp3',
-            endAudio: 'js/music/ding.mp3'
-        });
-    }
+    $('a[href*="#"]').click(function (event) {
+        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
+            && location.hostname === this.hostname) {
 
+            var target = $(this.hash);
+            target = (target.length) 
+                    ? target 
+                    : $('[name=' + this.hash.slice(1) + ']');
+            
+            if (target.length) {
+                event.preventDefault();
+
+                $('html, body').animate({
+                    scrollTop: target.offset().top - 60
+                }, 1000, function() {
+                    var $target = $(target);
+                    $target.focus();
+
+                    if ($target.is(":focus")) {
+                        return false;
+                    } 
+                    else {
+                        $target.attr('tabindex', '-1');
+                        $target.focus();
+                    }
+                });
+            }
+        }
+    });
 })();
