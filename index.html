@@ -6,6 +6,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -16,7 +19,7 @@
           <h1 class="logo-text float-right">Test Project</h1>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTestProject" aria-controls="navbarTestProject" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarTestProject">
           <ul class="navbar-nav ml-auto">
@@ -44,9 +47,9 @@
     <main>
       <section id="heroPanel" class="hero-section">
         <div class="hero-text-container container">
-          <span class="hero-sub-text text-dark">Eu fugiat nulla pariatur</span>
+          <h6 class="hero-sub-text text-dark">Eu fugiat nulla pariatur</h6>
           <h1 class="hero-main-text text-white">Excepteur sint occae cupidata non proide</h1>
-          <button type="button" class="btn btn-primary hero-button uppercase">Esse te cillum</a>
+          <a href="#perspiciatis" role="button" class="btn btn-primary hero-button uppercase">Esse te cillum</a>
         </div>
       </section>
       <section id="perspiciatis" class="icons-section bg-dark-gray text-white">
@@ -245,23 +248,22 @@
       <section id="iste" class="text-center">
         <h2>Iste Consultatis</h2>
         <hr class="title-separator" />
-        <div class="container-fluid">
-          <div class="row">
-            <!-- <div id="logoCarousel" class="slider"> -->
-              <div class="col"><img src="assets/logo-1.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-2.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-3.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-4.png" alt=""></div>
-              <div class="col"><img src="assets/logo-5.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-6.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-7.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-8.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-9.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-10.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-11.jpg" alt=""></div>
-              <div class="col"><img src="assets/logo-12.jpg" alt=""></div>
-            <!-- </div> -->
-          </div>
+        <p>Mida sit una namet, cons uectetur adipiscing adon elit.</p>
+        <div class="container">
+            <div id="isteCarousel" class="logo-carousel">
+              <div><img src="assets/logo-1.jpg" alt=""></div>
+              <div><img src="assets/logo-2.jpg" alt=""></div>
+              <div><img src="assets/logo-3.jpg" alt=""></div>
+              <div><img src="assets/logo-4.png" alt=""></div>
+              <div><img src="assets/logo-5.jpg" alt=""></div>
+              <div><img src="assets/logo-6.jpg" alt=""></div>
+              <div><img src="assets/logo-7.jpg" alt=""></div>
+              <div><img src="assets/logo-8.jpg" alt=""></div>
+              <div><img src="assets/logo-9.jpg" alt=""></div>
+              <div><img src="assets/logo-10.jpg" alt=""></div>
+              <div><img src="assets/logo-11.jpg" alt=""></div>
+              <div><img src="assets/logo-12.jpg" alt=""></div>
+            </div>
         </div>
       </section>
       <section id="natus" class="text-center bg-light-gray">
@@ -375,6 +377,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5a5e01c027.js"></script>
+
+    <!-- Ken Wheeler's Slick carousel for the logos -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Tim Holman's very good ElevatorJS library  -->
     <script src="js/elevator.js"></script>

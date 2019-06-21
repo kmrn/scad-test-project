@@ -31,7 +31,7 @@ h1, h2 { text-transform: uppercase; }
 
 h1, h2, h3 { font-weight: 800; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .btn {
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -78,7 +78,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
     padding: 0;
     padding-top: 10px;
-
 }
 
 .nav-link {
@@ -87,8 +86,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px;
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+}
+
 .navbar-toggler {
-    margin: 10px;
+    margin: 0 10px 10px auto;
+    padding: 6px 16px;
+    background-color: #ffc400;
+}
+
+.navbar-toggler i {
+    color: #fff;
 }
 
 .scad-logo {
@@ -127,8 +136,9 @@ h1, h2, h3, h4, h5, h6 {
 .hero-sub-text {
     background: rgba(255, 255, 255, 0.6);
     font-size: 1.5rem;
-    padding: 5px 30px;
+    padding: 20px 30px;
     font-weight: 200;
+    display: inline-block;
 }
 
 .hero-main-text {
@@ -146,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero-sub-text {
         font-size: 2rem;
+        padding: 8px 30px;
     }
 
     .hero-main-text {
@@ -220,12 +231,6 @@ section {
     font-size: 10px;
     color: #22a119;
 }
-
-/* .unde-carousel {
-    margin-top: 20px;
-    margin-bottom: 80px;
-    max-height: 369px;
-} */
 
 .unde-carousel {
     /* height: 400px; */
@@ -341,7 +346,29 @@ section {
 
 /** LOGOS SECTION ***/
 
+.logo-carousel img {
+    max-height: 140px;
+    margin: 40px auto;
+}
 
+.slick-dots {
+    padding: 0;
+}
+
+.slick-dots li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.slick-dots>.slick-active>.logo-carousel-dot{
+    background-color: #22a119;
+}
+
+.slick-dots li>.logo-carousel-dot {
+    height: 8px;
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
 
 /*** NATUS/TEAM SECTION ***/
 

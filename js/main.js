@@ -69,6 +69,49 @@
         }).modal();
     });
 
+    $('#isteCarousel').slick({
+        dots: true,
+        infinite: false,
+        speed: 500,
+        prevArrow: '',
+        nextArrow: '',
+        customPaging: function(slider, i) {
+            return $('<div class="logo-carousel-dot"></div>');
+        },
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 445,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    })
+
     $('a[href*="#"]').not('[href="#"]').click(function (event) {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
             && location.hostname === this.hostname) {
