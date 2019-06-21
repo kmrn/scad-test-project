@@ -5,7 +5,7 @@ I worked on this single page website in the 2 or 3 free nights I had this week. 
 
 ## Front End
 
-A fun extra I included was ElevatorJS instead of just having the "back to top" button simply scroll you to the top normally (I've always wanted an excuse to use it).
+A fun extra I included was ElevatorJS instead of just having the "back to top" button simply scroll you to the top normally (I've always wanted an excuse to use it). It unfortunately wasn't on a CDN so I "had" to include it in the repo.
 
 I used Bootstrap 4 for the layout since I noticed a few bootstrap components in the mockup and figured that made the most sense (also because the spec sheet I was given mentions boostrap as an example). Because I used Bootstrap that means I also had to include jQuery. I was originally using the slim build of jquery (no ajax or animations) but ended up switching to the full version for the smooth scroll animations after I had already written all the requests without `$.ajax()`.
 
@@ -19,4 +19,4 @@ The database creation script connects to the MySQL server specified in `config.p
 `contactForm.php` sanitizes all user input before inserting it into the messages table and then `getSignups.php` sanitizes before putting it into an html table that can be viewed at `/signups`. 
 
 
-The total size for the project with all assets comes out to about 4.4 MB.
+The total size of the site being served including all of the images is about 4.4MB.
