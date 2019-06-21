@@ -44,4 +44,18 @@
             xhr.send(JSON.stringify(formData));
         }
     });
+
+    $('.portfolio-link-container').click(function (event) {
+        event.preventDefault();
+
+        $('#portfolioModal').on('show.bs.modal', function (showModalEvent) {
+            var button = $(event.currentTarget);
+            var imageLink = button.find('.portfolio-image').attr('src');
+            var portfolioImage = $(showModalEvent.currentTarget).find('.portfolio-modal-image');
+
+            portfolioImage.attr('src', imageLink);
+        }).modal();
+    });
+
+    
 })();
